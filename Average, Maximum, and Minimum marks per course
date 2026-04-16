@@ -1,0 +1,4 @@
+SELECT C.CourseTitle, AVG(E.Marks) AS AvgMarks, MAX(E.Marks) AS MaxMarks, MIN(E.Marks) AS MinMarks
+FROM COURSE C
+JOIN ENROLLMENT E ON C.CourseID = E.CourseID
+GROUP BY C.CourseTitle;
