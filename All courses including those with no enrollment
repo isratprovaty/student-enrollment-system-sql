@@ -1,0 +1,3 @@
+SELECT C.CourseTitle, E.EnrollID
+FROM COURSE C
+LEFT JOIN ENROLLMENT E ON C.CourseID = E.CourseID;
