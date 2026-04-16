@@ -1,0 +1,36 @@
+-- Creating DEPARTMENT Table
+CREATE TABLE DEPARTMENT (
+    DeptID INT PRIMARY KEY,
+    DeptName VARCHAR(100) NOT NULL UNIQUE,
+    Building VARCHAR(100) NOT NULL
+);
+
+-- Creating STUDENT Table
+CREATE TABLE STUDENT (
+    StudentID INT PRIMARY KEY,
+    FullName VARCHAR(100) NOT NULL,
+    DeptID INT,
+    Batch INT NOT NULL,
+    CGPA DECIMAL(3,2),
+    FOREIGN KEY (DeptID) REFERENCES DEPARTMENT(DeptID)
+);
+
+-- Creating COURSE Table
+CREATE TABLE COURSE (
+    CourseID INT PRIMARY KEY,
+    CourseTitle VARCHAR(100) NOT NULL,
+    Credit INT CHECK (Credit > 0),
+    DeptID INT,
+    FOREIGN KEY (DeptID) REFERENCES DEPARTMENT(DeptID)
+);
+
+-- Creating ENROLLMENT Table
+CREATE TABLE ENROLLMENT (
+    EnrollID INT PRIMARY KEY,
+    StudentID INT,
+    CourseID INT,
+    Semester VARCHAR(20) NOT NULL,
+    Marks INT CHECK (Marks >= 0 AND Marks <= 100),
+    FOREIGN KEY (StudentID) REFERENCES STUDENT(StudentID),
+    FOREIGN KEY (CourseID) REFERENCES COURSE(CourseID)
+);
