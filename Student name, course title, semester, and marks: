@@ -1,0 +1,4 @@
+SELECT S.FullName, C.CourseTitle, E.Semester, E.Marks
+FROM STUDENT S
+INNER JOIN ENROLLMENT E ON S.StudentID = E.StudentID
+INNER JOIN COURSE C ON E.CourseID = C.CourseID;
