@@ -27,9 +27,33 @@ The system consists of four primary entities:
 
 ## 📸 Implementation & Screenshots
 
-### 1. Database & Table Creation
-Defined the schema with all required constraints to ensure data reliability.
-![Table Creation](table1.png).
-![Table Creation](table2.png).
-![Table Creation](table3.png).
+### 1. Database Create and Table Create
+All the result of create database and table.
+![Create Database](createdatabase.png).
+![Table Creation](createtable.png).
+
+### 2. Data Insert
+![Data Insert](insertdata1.png).
+![Data Insert](insertdata2.png).
+![Data Insert](insertdata3.png).
+
+### 2. Add Query
+![Add Query](query1.png).
+![Add Query](query2.png).
+![Add Query](query3.png).
+![Add Query](query4.png).
+![Add Query](query5.png).
+![Add Query](query6.png).
+![Add Query](query7.png).
+![Add Query](query8.png).
+![Add Query](query9.png).
+![Add Query](query10.png).
+![Add Query](query11.png).
+![Add Query](query12.png).
+
+------
+
+
+
+
 
