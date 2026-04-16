@@ -1,0 +1,6 @@
+SELECT S.FullName, AVG(E.Marks) AS AverageMarks
+FROM STUDENT S
+JOIN ENROLLMENT E ON S.StudentID = E.StudentID
+GROUP BY S.FullName
+ORDER BY AverageMarks DESC
+LIMIT 3;
