@@ -1,0 +1,4 @@
+SELECT C.CourseTitle, COUNT(E.StudentID) AS TotalEnrolled
+FROM COURSE C
+LEFT JOIN ENROLLMENT E ON C.CourseID = E.CourseID
+GROUP BY C.CourseTitle;
