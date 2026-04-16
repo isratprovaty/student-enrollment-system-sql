@@ -1,0 +1,3 @@
+SELECT FullName 
+FROM STUDENT 
+WHERE FullName LIKE 'S%' OR FullName LIKE '%a%';
