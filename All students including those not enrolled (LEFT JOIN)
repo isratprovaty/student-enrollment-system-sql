@@ -1,0 +1,3 @@
+SELECT S.FullName, E.CourseID 
+FROM STUDENT S
+LEFT JOIN ENROLLMENT E ON S.StudentID = E.StudentID;
