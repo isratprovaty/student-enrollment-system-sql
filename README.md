@@ -24,3 +24,12 @@ The system consists of four primary entities:
 - Department-wise student distribution.
 - Course-wise performance statistics (Avg, Max, Min marks).
 - Enrollment status for all students (including those not yet enrolled).
+
+## 📸 Implementation & Screenshots
+
+### 1. Database & Table Creation
+Defined the schema with all required constraints to ensure data reliability.
+![Table Creation](table1.png).
+![Table Creation](table2.png).
+![Table Creation](table3.png).
+
