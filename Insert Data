@@ -1,0 +1,24 @@
+-- Insert 4 Departments
+INSERT INTO DEPARTMENT VALUES (1, 'Computer Science', 'Annex 1'), (2, 'Electrical Eng', 'Annex 2'), (3, 'Business Administration', 'Main Block'), (4, 'Mathematics', 'Science Building');
+
+-- Insert 8 Students (Note: Some may not have enrollments)
+INSERT INTO STUDENT VALUES 
+(101, 'Sabbir Ahmed', 1, 2023, 3.80), (102, 'Sara Khan', 1, 2023, 3.50),
+(103, 'Abrar Fahim', 2, 2022, 3.20), (104, 'Sadia Afrin', 2, 2022, 3.90),
+(105, 'John Doe', 3, 2024, 3.00), (106, 'Alice Cooper', 3, 2024, 3.45),
+(107, 'Sameer Roy', 1, 2023, 3.10), (108, 'Bob Martin', 4, 2021, 2.80);
+
+-- Insert 6 Courses
+INSERT INTO COURSE VALUES 
+(501, 'Database Systems', 3, 1), (502, 'Algorithms', 3, 1),
+(503, 'Circuit Theory', 4, 2), (504, 'Microprocessors', 3, 2),
+(505, 'Marketing 101', 3, 3), (506, 'Linear Algebra', 3, 4);
+
+-- Insert 12 Enrollments
+INSERT INTO ENROLLMENT VALUES 
+(1, 101, 501, 'Spring 2026', 85), (2, 101, 502, 'Spring 2026', 78),
+(3, 102, 501, 'Spring 2026', 92), (4, 103, 503, 'Spring 2026', 65),
+(5, 104, 503, 'Spring 2026', 88), (6, 104, 504, 'Spring 2026', 70),
+(7, 105, 505, 'Spring 2026', 55), (8, 106, 505, 'Spring 2026', 82),
+(9, 107, 501, 'Spring 2026', 60), (10, 107, 502, 'Spring 2026', 45),
+(11, 101, 506, 'Spring 2026', 90), (12, 102, 502, 'Spring 2026', 84);
