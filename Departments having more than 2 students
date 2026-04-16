@@ -1,0 +1,5 @@
+SELECT D.DeptName, COUNT(S.StudentID) AS StudentCount
+FROM DEPARTMENT D
+JOIN STUDENT S ON D.DeptID = S.DeptID
+GROUP BY D.DeptName
+HAVING COUNT(S.StudentID) > 2;
