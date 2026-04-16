@@ -1,4 +1,0 @@
-SELECT S.FullName, COUNT(E.CourseID) AS TotalCourses, AVG(E.Marks) AS AvgMarks
-FROM STUDENT S
-LEFT JOIN ENROLLMENT E ON S.StudentID = E.StudentID
-GROUP BY S.FullName;
